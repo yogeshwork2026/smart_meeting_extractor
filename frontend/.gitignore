@@ -1,0 +1,17 @@
+node_modules/
+.next/
+out/
+build/
+
+# Secrets - shared separately, never committed
+.env
+.env.*
+
+next-env.d.ts
+
+npm-debug.log*
+*.log
+
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,60 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.9rem;
+}
+
+.skeleton {
+  height: 128px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #eef0f3 25%, #f7f8fa 50%, #eef0f3 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.9rem 1rem;
+  background: #fdecec;
+  border: 1px solid #f5c2c0;
+  border-radius: 10px;
+  color: #b42318;
+  font-size: 0.9rem;
+}
+
+.notice {
+  margin: 0 0 0.8rem;
+  padding: 0.6rem 0.9rem;
+  background: #fff6e5;
+  border: 1px solid #fcd9a1;
+  border-radius: 10px;
+  color: #b54708;
+  font-size: 0.85rem;
+}
+
+.empty {
+  margin: 0;
+  padding: 1.6rem 1rem;
+  text-align: center;
+  border: 1px dashed #d5d9e0;
+  border-radius: 10px;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton {
+    animation: none;
+  }
+}

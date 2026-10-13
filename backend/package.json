@@ -1,0 +1,21 @@
+{
+  "name": "smart-meeting-extractor-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Node.js API that extracts structured tasks from raw meeting notes",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "2.8.5",
+    "dotenv": "16.4.5",
+    "express": "4.19.2",
+    "groq-sdk": "^0.9.1",
+    "mysql2": "3.11.3",
+    "zod": "3.23.8",
+    "zod-to-json-schema": "^3.23.3"
+  }
+}

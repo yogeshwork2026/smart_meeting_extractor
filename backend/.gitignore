@@ -1,0 +1,12 @@
+node_modules/
+
+# Secrets - shared separately, never committed
+.env
+.env.*
+
+npm-debug.log*
+*.log
+
+.DS_Store
+.vscode/
+.idea/

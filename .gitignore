@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Build output
+dist/
+coverage/
+
+# Editor settings
+.vscode/
+
+# Logs
+npm-debug.log*
+*.log
+
+.DS_Store
